@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    background-color: #DCDCDC;
 }
 
 .navbar {
@@ -16,4 +17,7 @@ body {
     border-radius: 70%;
 }
 
+.bg-black {
+    background-color: #000000;
+}
 
