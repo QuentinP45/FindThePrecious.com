@@ -8,9 +8,22 @@ body {
     margin-bottom: 0px;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar li {
+    font-family: 'anirm';
+}
+
 .center-pills, .center-thumbnails {
     display: flex;
     justify-content: center;
+}
+
+.thumbnail {
+    padding: 0;
+    margin: 10px;
 }
 
 .img-circle {
@@ -19,5 +32,171 @@ body {
 
 .bg-black {
     background-color: #000000;
+    position: relative;
+    
+   
 }
 
+@font-face {
+    font-family: 'Sweet_Hipster';
+    src: url('polices/tnganbi.ttf');
+}
+
+@font-face {
+    font-family: 'anirm';
+    src: url('polices/anirm.ttf');
+}
+
+@font-face {
+    font-family: 'party';
+    src: url('polices/party.ttf');
+}
+
+p {
+ font-family: 'party';
+ font-size: 1.7em;
+}
+
+h1 {
+    font-family: 'anirm';
+    font-size: 30px;
+}
+
+h1::before {
+    content: "ij";
+    font-family: 'Sweet_Hipster';
+    vertical-align: top;
+    margin-right: 15px;
+    color: orange;
+}
+
+h1::after {
+    content: "ij";
+    font-family: 'Sweet_Hipster';
+    vertical-align: top;
+    margin-left: 15px;
+    color: orange;
+}
+
+ul.pills-hover > li > a:hover::before {
+    content: "b";
+    font-family: 'Sweet_Hipster';
+    color: orange;
+    margin-right: 10px;
+}
+
+ul.pills-hover > li > a:hover::after {
+    content: "b";
+    font-family: 'Sweet_Hipster';
+    color: orange;
+    margin-left: 10px;
+    text-decoration: none;
+
+}
+
+ul.nav-pills {
+    font-family: 'anirm';
+}
+
+.nav-pills > li > a {
+    color: grey;
+}
+
+.nav-pills > li > a:hover {
+    color: orange;
+}
+
+.up1 p {
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    right: 20%;
+    background: white;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 10px;
+    text-align:center;
+}
+
+.up2 p {
+    position: absolute;
+    bottom: 110px;
+    left: 20%;
+    right: 20%;
+    text-align:center;
+    font-size: 2em;
+    color: white;  
+}
+
+.up3 p {
+    color: orange;
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    right: 20%;
+    font-size: 2em;
+    padding: 10px;
+    text-align:center;
+}
+
+.up4 p {
+    position: absolute;
+    bottom: 110px;
+    left: 20%;
+    right: 20%;
+    text-align:center;
+    font-size: 2em;
+    color: white; 
+}
+
+.up1 span {
+    color: coral;
+    font-size: 1.1em;
+}
+
+.bg-lol img {
+    opacity: 0.5;
+}
+
+.bg-lol:hover img {
+    opacity: 1;
+}
+
+.bg-lol:hover .up1 {
+    display: none;
+}
+
+.bg-lol:hover .up3 {
+    display: none;
+}
+
+.decoration {
+    width: 33%;
+    height: 5px;
+    background-color: orange;
+    margin: auto;
+}
+
+.color-white {
+    color: white;
+}
+
+.panel-default > .panel-heading {
+    background-color: orange;
+}
+
+.text-mana {
+    font-family: 'party';
+}
+
+.big {
+    font-size: 1.7em;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.opacity {
+ opacity: 1;
+}
