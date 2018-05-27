@@ -1,8 +1,29 @@
 @mixin ring($size, $color) {
   height: $size;
   width: $size;
-  color: $color;
-  box-shadow: $size/100px $size/100px 0px $black;
-  border: $size/100%;
-  border-radius: ;
+  box-shadow: $size*(1/100) $size*(1/100) 2px black;
+  border: $size*(5/100) solid $color;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 15px;
 }
+
+@mixin ringLoop($size, $color, $nbLoop) {
+  @for $i from 1 through $nbLoop {
+    span:nth-child(#{$i}) {
+      height: $size + $i*2;
+      width: $size + $i *2;
+      box-shadow: $size*(1/100) $size*(1/100) 2px black;
+      border: $size*(($i*2)/100) solid $color;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: -25px;
+    }
+  }
+}
+
+.ring1 { @include ring(50px, yellow); }
+
+.ring2 { @include ring(70px, red); }
+
+.ring3 { @include ringLoop(90px, blue, 6); }
